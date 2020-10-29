@@ -1,0 +1,24 @@
+Problem
+
+       If you have good observations skills, you may found that building a Magic Square is simple. A Magic Square has only an odd number N of rows and columns where N < 100. A Magic Square is created by integer numbers in the range from 1 to  , with a peculiar property, the “sum of the numbers” in each row, column and diagonal are the same.
+
+ For the case n = 3,
+M. Square                Rows          Columns       Diagonals
+ 4 9 2                   4+9+2 = 15    4+3+8 = 15    2+5+8 = 15
+ 3 5 7                   3+5+7 = 15    9+5+1 = 15    4+5+6 = 15
+ 8 1 6                   8+1+6 = 15    2+7+6 = 15
+
+Requirement
+
+
+     You have to use 2-dimension array in your program. Without using it, minus 20 points.
+
+Input
+
+       Each line contains an Integer N denoting an N * N Magic Square.
+
+Output
+
+       如果N是偶數則輸出”It is not an odd number. ”。
+
+       如果N是奇數則先輸出直橫列的加總數字，再輸出N * N數字陣列,每個數字以%5d 格式輸出。每個測資間請空一行。

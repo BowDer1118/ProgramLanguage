@@ -1,0 +1,22 @@
+Description
+
+A Latin square is an n-by-n array filled with n different Latin letters, each occurring exactly once in each row and once in each column.
+
+Write a program that prompts the user to enter the number n and the array of characters, as shown in the sample output, and checks if the input array is a Latin square. The characters are the first n characters starting from A.
+
+ 
+Input
+
+Enter number n, and enter n rows of letters separated by spaces.
+
+0 < n <= 26, all the letters in square are A ~ Z.
+Input is terminated by a set where n = -1. This set should not be processed.
+
+ 
+Output
+
+Recognize if it is Latin Square or not. There are 2 different kinds of your answers:
+The input array is a Latin square
+The input array is not a Latin square
+
+Overall, just check if it is Latin square or not.
