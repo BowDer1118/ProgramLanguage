@@ -1,0 +1,2 @@
+Write a assembly main procedure to call C function GCD,
+Calculate the GCD and LCM of two input number.

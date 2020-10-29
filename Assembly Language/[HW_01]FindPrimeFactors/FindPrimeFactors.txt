@@ -1,0 +1,2 @@
+Write a C main program to call asm function,
+Call C function and C standard library in asm program.
