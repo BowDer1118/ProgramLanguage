@@ -1,0 +1,1 @@
+Find and display those primes less than input number.
