@@ -1,0 +1,19 @@
+Problem
+
+        輸入數字N (資料型態為 signed number)， 請輸出該數字的所有質因數及其次方。例如N = 360 = 2^3 * 3^2 *5 。此題數字可能會有質數出現。
+
+
+
+Requirement
+
+       寫一個副程式可傳入一參數為正數N並處理資因數分解並輸出，無此副程式扣20分。
+
+        不可呼叫 scanf() 與 printf(), 違反扣30分。
+
+Input
+
+         輸入有多列，每列有個整數N，if N < 0, exit the program。請使用 ReadInt procedure in irvine32.lib，無使用 ReadInt 扣15分。
+
+Output
+
+        針對每一組測資數字N，輸出N的質因數分解，將數字N的所有質因數（及其次方）以小到大方式顯示出來，如質因數之次方數大於1，以^運算符號顯示，不同質因數間以 * 運算符號互相連接， * 運算符號前後加空格。 請使用WriteXXX procedures in irvine32.lib, 無使用WriteXXX  扣15分。
