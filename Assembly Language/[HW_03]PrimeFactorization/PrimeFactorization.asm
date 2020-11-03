@@ -128,8 +128,8 @@ SearchPrimeFactor PROC
 SPF:
 	call SearchNextPrime		;Prepare next prime for prime factor searching
 	mov eax,inputData			;Reset inputdata to EAX(Cause EAX is overrided by SearchNextPrime function)
-	cmp eax,1					;If inputData=1
-	je	EndSearchPrimeFactor	;Skip this number
+	cmp eax,1					;If inputData<=1
+	jle	EndSearchPrimeFactor	;Skip this number
 	CDQ							;Extend EAX to EDX:EAX
 	mov ebx,prime				;Store prime with EBX
 	idiv ebx					;input/prime
@@ -176,7 +176,7 @@ main PROC
 InputNumber:
 	call ReadInt
 	cmp eax,0
-	jle EndProcess				;If input number less than or equal zero
+	jl EndProcess				;If input number less than zero
 	mov inputData,eax			;Store inputData to global variable
 	call ProcessData			;Call process inputdata function
 	jmp InputNumber				;Case processed complete and start to process next case
