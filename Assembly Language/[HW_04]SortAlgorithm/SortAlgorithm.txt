@@ -1,0 +1,38 @@
+Problem:
+        Implement a sorting algorithm to sort a set of integers in descending order.
+
+Input: 
+         For each test case, input a positive integer N followed by N signed integers, where 0<= N <= 1000.  If N = 0, exit the program.
+
+Output:
+          For each test case, print out the integers in descending order. All integers are separated by a space character. Print also print the middle numbers in the list of integers.  Test cases are separated by a newline.
+
+Requirement:
+        1.  學號(不含檢查碼) % 3 = 0, please write a sorting procedure using  bubble sort algorithm.
+
+        2.  學號(不含檢查碼) % 3 = 1, please write a sorting procedure using  insertion sort algorithm.  
+
+        3.  學號(不含檢查碼) % 3 = 2, please write a sorting procedure using selection sort.
+
+        4.  Write a sorting procedure with two input parameters.
+            The first parameter is the starting (base) address of an integer array.
+            The second parameter is the number of integers in the array, i.e., N.
+
+            You have to use use stack to pass the parameters.  
+
+          扣 20 分 if you use registers to pass parameters.
+
+       5.  Use multiple module program. That is, main procedure is in one .asm file and sort procedure in another .asm file.  There is one header .inc file for the prototyping of sort procedure. Your project has two .asm files and one .inc file. Please reference Sec. 8.5 in textbook.
+
+       6. Please also write an array input  procedure in a separate .asm file.
+
+           Please also write an array printing procedure in an .asm file.
+
+           扣 20 分 if you don't use multi-module program.
+
+        7.  You can use scanf() for the input but you can not use printf() for the output in your assembly program. 
+         扣 20 分 if you use printf() in your program.
+
+         8.  If N is odd, print one middle number, otherwise, print two middle numbers.
+
+         9.  All source code is written in x86 assembly.

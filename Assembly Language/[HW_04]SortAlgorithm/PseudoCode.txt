@@ -1,0 +1,58 @@
+//ProtoType
+int inputData(int* dataArray);              //inputData PROTO,address:PTR dataArray
+void bubbleSort(int* dataArray,int count);  //bubbleSort PROTO,address:PTR dataArray,count:PTR count
+void outputData(int* dataArray,int count);  //outputData PROTO,address:PRT dataArray,count:PTR count
+
+int main(){
+    //全域變數                        //.data
+    int dataArray[200]={0};          //dataArray DWORD 200 DUP(0)
+    int count;                       //count DWORD ?
+    
+    //程式碼區                       //.code
+    count=inputData(dataArray);     //INVOKE inputData,ADDR dataArray 
+    bubbleSort(dataArray,count);    //INVOKE bubbleSort,ADDR dataArray,ADDR count
+    outputData(dataArray,count);    //INVOKE outputData,ADDR dataArray,ADDR count
+
+    return 0;
+}
+
+
+
+int inputData(int* dataArray){
+    int count;
+    scanf("%d",&count);
+    
+    for(int i=0;i<count;i++){
+        scanf("%d",dataArray[i]);
+    }
+
+    return count;
+        
+}
+
+void bubbleSort(int* dataArray,int count){  //陣列OFFSET,總共有幾個input
+    while(count>1){
+        count--;        //sub count
+        for(int i=0;i<count;i++){
+            int temp;
+            if(data[i]>data[i+1]){
+                temp=data[i+1];     
+                data[i]=data[i+1];
+                data[i+1]=temp;
+                /*
+                    使用XCHG instruction直接交換兩個值
+                    mov eax,[esi]
+                    xchg eax,[esi+4]
+                */
+            }
+        }
+    }
+}
+
+void outputData(int* dataArray,int count){
+    if(count%2==0){
+        printf("%d",dataArray[count+1/2]);
+    }else{
+        printf("%d %d",dataArray[count/2],dataArray[count/2+1]);
+    }
+}
