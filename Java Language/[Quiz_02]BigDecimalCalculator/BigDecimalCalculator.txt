@@ -1,0 +1,31 @@
+Problem Description
+
+Write a program to input an expression in which the operands and operators are separated by
+
+zero or more spaces. For example, 3.5+4 and 3.5+4 are acceptable expressions. The operators
+
+in the expression might be +, -, *, /, and %. Your program must print out the expression and
+
+its computing result. The sample output for the input expression 3.5 + 4 − 2.5 is shown below:
+
+3.5 + 4.0 ‒2.1 = 5.4
+Input Format
+
+There are many input lines. Each line has an input expression Exp. Each expression can have
+
+at most 3 operands and two operators.
+Output Format
+
+For each input expression Exp, please output the expression and its computing result. Output
+
+each value with 1 decimal digit. Output tokens (operand and operator) are separated by a
+
+space character.
+Technical Specification
+Write a static method BigDecimal calculate(String exp) to compute the expression
+
+and return a BigDecimal result. The operands should be stored as BigDecimal in
+
+this method. You have to use the arithmetic operators provided by the BigDecimal
+
+class to calculate the expression
