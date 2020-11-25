@@ -1,0 +1,15 @@
+請利用作業一(Part 2)中序轉後序-轉後序的答案輸出後續的算式，並輸出運算結果
+
+輸入
+每組測資會給予不一定長度的算式，符號包含+,-,*,/,(,),%。
+程式要求 (未依規定以0分記)
+Write a Class XXXX (name it yourself) (which is not the Main class)  for computing the input expression.
+Class XXXX must include the following three static methods
+​​String[] AAAA(String s) which returns an array of string tokens for the input expession s.
+String[] BBBB(String s) which returns an array of string tokens (Postfixe Expression) for the input expression s. Note that BBBB() can call AAAA().
+BigDecimal CCCC(String s) which returns the computing result of input expresdion s. Note that CCCC() can call AAAA() and BBBB().
+Please give a meaningful name for AAAA, BBBB, and CCCC.
+
+輸出
+
+輸出算式的答案(BigDecimal)。
