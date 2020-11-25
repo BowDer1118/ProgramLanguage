@@ -1,0 +1,10 @@
+請設計一個繼承自抽象GeometricObject 類別的新Triangle類別。 課本練習13.1 
+Input
+
+請先輸入3個邊的線段長(double)
+
+輸入顏色(String)
+
+再輸入是否為填滿值(Boolean)
+Output
+依序輸出三角形的面積、周長、顏色及是否為填滿值
