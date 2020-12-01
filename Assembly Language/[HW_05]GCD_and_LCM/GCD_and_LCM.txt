@@ -1,0 +1,19 @@
+Problem: GCD and LCM
+Input:
+         There are many lines of input.  Each line has two integers M and N. Repeat reading pairs of integers until a negative number is read.
+
+Output:
+         For each pair of positive numbers (M and N), print out GCD(M, N) and LCM(M, N).
+
+Requirement:
+         1.  All codes are written in x86 assembly language.  Minus 40 points if you don't do it. 
+
+         2. Write a x86 recursive procedure GCD with two input parameters M and N and it returns the GCD of M and N.   Minus 20 points if you don't do it.
+
+        3. In the GCD procedure, declare a local variable R = M % N, i.e., reserve an integer in the stack (4 bytes). Using [EBP - 4] to access R. Minus 20 points if you don't use local variable R.
+
+        4. In the LCM procedure, you can call GCD(M, N), and LCM(M, N) = M * N / GCD(M, N).  Minus 20 points if you don't call GCD(M, N). 
+
+        5. Use ReadInt and WriteInt procedures in irvine32.lib to read and write integers.
+
+             Please reference pp. 198 and pp. 201 (Sec.5.4.3) in textbook.    Without using them, minus 20 points.

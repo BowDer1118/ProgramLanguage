@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int GCD(int x, int n);  //x<n
+int LCM(int x, int n);
+
+int main() {
+    int x, y;
+    scanf("%d", &x);
+    if (x > 0) {
+        scanf("%d", &y);
+        if (x > y) {
+            int temp;
+            temp = y;
+            y = x;
+            x = temp;
+        }
+        int gcd = GCD(x, y);
+        int lcm = LCM(x, y);
+        printf("GCD:%d\n", gcd);
+        printf("GCD:%d\n", lcm);
+    }
+    return 0;
+}
+
+int GCD(int m, int n) {
+    if (m == 0) {
+        return n;
+    } else {
+        return GCD(n % m, m);
+    }
+}
+
+int LCM(int x, int n) {
+    return x * n / GCD(x, n);
+}
