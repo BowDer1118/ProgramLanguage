@@ -47,30 +47,34 @@ void dimensionDown(int output[],int len){
 int main(){
     int row,col,len;
     char mode,majar;
+    int count=0;
     while(scanf("%d %d %d %c %c",&row,&col,&len,&mode,&majar)==5){
         int input[len];
         int output[len];
         for(int i=0;i<len;i++){
             scanf("%d",&input[i]);
         }
-
-        if(majar=='R'){
-            rMajar(input,output,len);
-        }else{
-            if(row>col){
-                cMarjar(input,output,len,row);
-            }else{
-                cMarjar(input,output,len,col);
-            }     
+        
+        if(count!=0){
+            puts("");
         }
 
         if(mode=='U'){
+            if(majar=='R'){
+                rMajar(input,output,len);
+            }else{
+                cMarjar(input,output,len,row);
+            }
             dimensionUp(output,len,col);
         }else{
+            if(majar=='R'){
+                rMajar(input,output,len);
+            }else{
+                cMarjar(input,output,len,col);
+            }
             dimensionDown(output,len);
         }
-
-        puts("");
+        count++;
     }
     return 0;
 }
