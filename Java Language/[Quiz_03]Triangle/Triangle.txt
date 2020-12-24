@@ -1,0 +1,28 @@
+Problem Description
+
+請定義 Triangle class，輸入三點建立三角形，先判斷是否為三角形，正確則輸出其三邊⻑以
+
+及其面積。反之，輸出”Just Line!”.
+
+Triangle class 必須有 3 data members (其型別為 Point2D class) 代表三角形的頂點。假設有一
+
+個三角形，邊⻑分別為，三角形的面積可由以下公式求得：A =
+
+√s(s − a)(s − b)(s − c), s =(A+B+C) / 2
+Input Format
+
+先輸入數字 N，代表總共有多少組測試資料，每組測試資料會依序輸入三個座標點 (皆為
+
+double)，分別為 x1, y1, x2, y2, x3, y3。
+Output Format
+
+請判斷三個座標點是否可以形成三角形，若可以則由小到大輸出三角形其三條邊⻑ (到小數
+
+點第三位)，再輸出其面積 (到小數點第三位)。若不行，則輸出”Just Line!”
+
+Technical Specification
+注意！本題必須定義兩類別 Triangle 及 Point，Triangle 內需包含 3 個點，以及方法 (method) 算三角形面積，Point 須包含方法 算兩點之間的距離
+
+*** 允許使用 Point2D 類別 ***
+
+***** 未依照題規定，不予給分 *****
