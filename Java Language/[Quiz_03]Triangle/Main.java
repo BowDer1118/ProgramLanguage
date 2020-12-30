@@ -6,9 +6,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class Triangle {
-	Point2D pA;
-	Point2D pB;
-	Point2D pC;
+	private Point2D pA;
+	private Point2D pB;
+	private Point2D pC;
 
 	public Triangle() {
 
@@ -20,9 +20,15 @@ class Triangle {
 		this.pC = pC;
 	}
 
-	public double Area(double dAB, double dBC, double dAC) {
-		double S = (dAB + dBC + dAC) / 2;
-		return Math.sqrt(S * (S - dAB) * (S - dBC) * (S - dAC));
+	public double Area() {
+		double[] sides = this.getSides();
+		double s = (sides[0] + sides[1] + sides[2]) / 2;
+		return Math.sqrt(s * (s - sides[0]) * (s - sides[1]) * (s - sides[2]));
+	}
+
+	public double[] getSides() {
+		double[] sides = { this.pA.distance(this.pB), this.pB.distance(this.pC), this.pA.distance(this.pC) };
+		return sides;
 	}
 }
 
@@ -38,13 +44,10 @@ public class Main {
 			pA.setLocation(sc.nextDouble(), sc.nextDouble());
 			pB.setLocation(sc.nextDouble(), sc.nextDouble());
 			pC.setLocation(sc.nextDouble(), sc.nextDouble());
-			double dAB = pA.distance(pB);
-			double dBC = pB.distance(pC);
-			double dAC = pA.distance(pC);
 
 			Triangle t = new Triangle(pA, pB, pC);
-			double area = t.Area(dAB, dBC, dAC);
-			double[] sides = { dAB, dBC, dAC };
+			double area = t.Area();
+			double[] sides = t.getSides();
 			Arrays.sort(sides);
 			if (area > 0) {
 				System.out.printf("%.3f %.3f %.3f %.3f\n", sides[0], sides[1], sides[2], area);
