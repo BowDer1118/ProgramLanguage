@@ -1,0 +1,16 @@
+Problem Description
+
+請輸入二進位數字字串 S,並將其轉換成十進位的數值 N。當輸入格式有錯誤時,必須作
+
+例外處理。建立一個名稱為 MyNumberFormatException (extends Exception) 的 Exception
+
+Class,當錯誤發生時必須丟出例外的物件,並作出例外處理。
+Input Format
+
+輸入有多筆測資,每列代表一組測資,每組測資有一行字串 S。
+Output Format
+
+若輸入字串 S 為正確的二進位格式字串,直接輸出轉換後的十進位數字 N。反之,請輸出”
+
+Incorrect Binary Format”。
+

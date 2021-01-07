@@ -1,0 +1,20 @@
+Problem Description
+
+題目內容為給你一組數字,以 Vector<Integer> vector 儲存,先升序 sort 之後,依序以特定
+
+方式儲存到 ArrayDeque<Integer> array,方式為
+假設 vector 的數字為偶數,則加到 array 的尾端,
+假設 vector 的數字為奇數,則加到 array 的前端,
+
+且在每組測資結束後以 removeFirst() 的方式清空 ArrayDeque。
+Input Format
+
+輸入有多筆測資,每行代表一組測資,每組測資會輸入一段數字 (數字的大小為 > 0 <
+
+2, 147, 483, 647),數字的數目不一定,輸入 0 為一組測資的結束。
+Output Format
+
+依照 ArrayDeque array 儲存的順序依序輸出,輸出的值之間請以一個空格分開。
+Technical Specification
+
+本題須使用 Vector 以及 ArrayDeque,有關其用法請自行查詢
