@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 //小數點下兩位無條件省略
-double get_average(double total, int num) {
-    double d_temp = total / num;
-    int i_temp = (int)(d_temp * 100);
-    return (double)i_temp / 100;
+double get_average(int total, int num) {
+    total *= 100;
+    total /= num;
+    return total / 100.0;
 }
 
 int main() {
@@ -43,7 +43,7 @@ int main() {
 
         puts("==================================================");
         //輸出時才做除法-->避免誤差
-        printf("%-13s%-11.2lf%-7.2lf%-14.2lf%-5.2lf\n", "Mean", get_average(total_scores[0], std_num), get_average(total_scores[1], std_num), get_average(total_scores[2], std_num), get_average(total_scores[3] * 0.1, std_num));
+        printf("%-13s%-11.2lf%-7.2lf%-14.2lf%-5.2lf\n", "Mean", get_average(total_scores[0], std_num), get_average(total_scores[1], std_num), get_average(total_scores[2], std_num), get_average(total_scores[3], std_num * 10));
         puts("==================================================");
 
         flag = true;
