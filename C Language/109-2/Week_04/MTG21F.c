@@ -68,9 +68,9 @@ void write_cards(Card *cards, int len) {  //批次輸出Card結構體陣列 共l
         return;
     }
 
-    fputs("--------------------------------------------------------------------------------------------------------------------", file);
-    fputs("Name                        Colorless   White   Red   Green   Blue   Black   Type                  Power   Toughness", file);
-    fputs("--------------------------------------------------------------------------------------------------------------------", file);
+    fputs("--------------------------------------------------------------------------------------------------------------------\n", file);
+    fputs("Name                        Colorless   White   Red   Green   Blue   Black   Type                  Power   Toughness\n", file);
+    fputs("--------------------------------------------------------------------------------------------------------------------\n", file);
     for (int i = 0; i < len; i++) {
         if (isalpha(cards[i].cost.colors[0])) {  //判斷Card結構體的colorless成員的值是'x'(字元)還是數字
             fprintf(file, "%-28s%9c%8d%6d%8d%7d%8d%3s%-22s%5d%12d\n", cards[i].name, cards[i].cost.colors[0], cards[i].cost.colors[1], cards[i].cost.colors[2], cards[i].cost.colors[3], cards[i].cost.colors[4], cards[i].cost.colors[5], "   ", cards[i].type, cards[i].power, cards[i].toughness);
