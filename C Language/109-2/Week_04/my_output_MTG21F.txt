@@ -1,0 +1,286 @@
+--------------------------------------------------------------------------------------------------------------------Name                        Colorless   White   Red   Green   Blue   Black   Type                  Power   Toughness--------------------------------------------------------------------------------------------------------------------Adherent of Hope                    1       1     0       0      0       0   Creature                  2           1
+Alchemist's Gift                    0       0     0       0      0       1   Instant                   0           0
+Alpine Houndmaster                  0       1     1       0      0       0   Creature                  2           2
+Alpine Watchdog                     1       1     0       0      0       0   Creature                  2           2
+Angelic Ascension                   1       1     0       0      0       0   Instant                   0           0
+Animal Sanctuary                    0       0     0       0      0       0   Land                      0           0
+Anointed Chorister                  0       1     0       0      0       0   Creature                  1           1
+Archfiend's Vessel                  0       0     0       0      0       1   Creature                  1           1
+Aven Gagglemaster                   3       2     0       0      0       0   Creature                  4           3
+Azusa Lost but Seeking              2       0     0       1      0       0   Legendary Creature        1           2
+Bad Deal                            4       0     0       0      0       2   Sorcery                   0           0
+Baneslayer Angel                    3       2     0       0      0       0   Creature                  5           5
+Barrin Tolarian Archmage            1       0     0       0      2       0   Legendary Creature        2           2
+Basri Ket                           1       2     0       0      0       0   Legendary Planeswalker    0           3
+Basri Devoted Paladin               4       2     0       0      0       0   Legendary Planeswalker    0           4
+Basri's Acolyte                     2       2     0       0      0       0   Creature                  2           3
+Basri's Aegis                       2       2     0       0      0       0   Sorcery                   0           0
+Basri's Lieutenant                  3       1     0       0      0       0   Creature                  3           4
+Basri's Solidarity                  1       1     0       0      0       0   Sorcery                   0           0
+Battle-Rattle Shaman                3       0     1       0      0       0   Creature                  2           2
+Blood Glutton                       4       0     0       0      0       1   Creature                  4           3
+Bloodfell Caves                     0       0     0       0      0       0   Land                      0           0
+Blossoming Sands                    0       0     0       0      0       0   Land                      0           0
+Bolt Hound                          2       0     1       0      0       0   Creature                  2           2
+Bone Pit Brute                      4       0     2       0      0       0   Creature                  4           5
+Brash Taunter                       4       0     1       0      0       0   Creature                  1           1
+Burlfist Oak                        2       0     0       2      0       0   Creature                  2           3
+Burn Bright                         2       0     1       0      0       0   Instant                   0           0
+Caged Zombie                        2       0     0       0      0       1   Creature                  2           3
+Cancel                              1       0     0       0      2       0   Instant                   0           0
+Canopy Stalker                      3       0     0       1      0       0   Creature                  4           2
+Capture Sphere                      3       0     0       0      1       0   Enchantment               0           0
+Carrion Grub                        3       0     0       0      0       1   Creature                  0           5
+Celestial Enforcer                  2       1     0       0      0       0   Creature                  2           3
+Chandra Flame's Catalyst            4       0     2       0      0       0   Legendary Planeswalker    0           5
+Chandra Heart of Fire               3       0     2       0      0       0   Legendary Planeswalker    0           5
+Chandra's Firemaw                   3       0     2       0      0       0   Creature                  4           2
+Chandra's Incinerator               5       0     1       0      0       0   Creature                  6           6
+Chandra's Magmutt                   1       0     1       0      0       0   Creature                  2           2
+Chandra's Pyreling                  1       0     1       0      0       0   Creature                  1           3
+Chromatic Orrery                    7       0     0       0      0       0   Legendary Artifact        0           0
+Chrome Replicator                   5       0     0       0      0       0   Artifact Creature         4           4
+Colossal Dreadmaw                   4       0     0       2      0       0   Creature                  6           6
+Conclave Mentor                     0       1     0       1      0       0   Creature                  2           2
+Concordia Pegasus                   1       1     0       0      0       0   Creature                  1           3
+Conspicuous Snoop                   0       0     2       0      0       0   Creature                  2           2
+Containment Priest                  1       1     0       0      0       0   Creature                  2           2
+Crash Through                       0       0     1       0      0       0   Sorcery                   0           0
+Crypt Lurker                        3       0     0       0      0       1   Creature                  3           4
+Cultivate                           2       0     0       1      0       0   Sorcery                   0           0
+Daybreak Charger                    1       1     0       0      0       0   Creature                  3           1
+Deathbloom Thallid                  2       0     0       0      0       1   Creature                  3           2
+Defiant Strike                      0       1     0       0      0       0   Instant                   0           0
+Demonic Embrace                     1       0     0       0      0       2   Enchantment               0           0
+Destructive Tampering               2       0     1       0      0       0   Sorcery                   0           0
+Dire Fleet Warmonger                1       0     1       0      0       1   Creature                  3           3
+Discontinuity                       3       0     0       0      3       0   Instant                   0           0
+Dismal Backwater                    0       0     0       0      0       0   Land                      0           0
+Double Vision                       3       0     2       0      0       0   Enchantment               0           0
+Drowsing Tyrannodon                 1       0     0       1      0       0   Creature                  3           3
+Dub                                 2       1     0       0      0       0   Enchantment               0           0
+Duress                              0       0     0       0      0       1   Sorcery                   0           0
+Elder Gargaroth                     3       0     0       2      0       0   Creature                  6           6
+Eliminate                           1       0     0       0      0       1   Instant                   0           0
+Enthralling Hold                    3       0     0       0      2       0   Enchantment               0           0
+Epitaph Golem                       5       0     0       0      0       0   Artifact Creature         3           5
+Experimental Overload               2       0     1       0      1       0   Sorcery                   0           0
+Fabled Passage                      0       0     0       0      0       0   Land                      0           0
+Faith's Fetters                     3       1     0       0      0       0   Enchantment               0           0
+Falconer Adept                      3       1     0       0      0       0   Creature                  2           3
+Feat of Resistance                  1       1     0       0      0       0   Instant                   0           0
+Feline Sovereign                    2       0     0       1      0       0   Creature                  2           3
+Fetid Imp                           1       0     0       0      0       1   Creature                  1           2
+Fierce Empath                       2       0     0       1      0       0   Creature                  1           1
+Fiery Emancipation                  3       0     3       0      0       0   Enchantment               0           0
+Finishing Blow                      4       0     0       0      0       1   Instant                   0           0
+Forest                              0       0     0       0      0       0   Basic Land                0           0
+Forgotten Sentinel                  4       0     0       0      0       0   Artifact Creature         4           3
+Frantic Inventory                   1       0     0       0      1       0   Instant                   0           0
+Frost Breath                        2       0     0       0      1       0   Instant                   0           0
+Fungal Rebirth                      2       0     0       1      0       0   Instant                   0           0
+Furious Rise                        2       0     1       0      0       0   Enchantment               0           0
+Furor of the Bitten                 0       0     1       0      0       0   Enchantment               0           0
+Gadrak the Crown-Scourge            2       0     1       0      0       0   Legendary Creature        5           4
+Gale Swooper                        3       1     0       0      0       0   Creature                  3           2
+Garruk Savage Herald                4       0     0       2      0       0   Legendary Planeswalker    0           5
+Garruk Unleashed                    2       0     0       2      0       0   Legendary Planeswalker    0           4
+Garruk's Gorehorn                   4       0     0       1      0       0   Creature                  7           3
+Garruk's Harbinger                  1       0     0       2      0       0   Creature                  4           3
+Garruk's Uprising                   2       0     0       1      0       0   Enchantment               0           0
+Garruk's Warsteed                   3       0     0       2      0       0   Creature                  3           5
+Ghostly Pilferer                    1       0     0       0      1       0   Creature                  2           1
+Gloom Sower                         5       0     0       0      0       2   Creature                  8           6
+Glorious Anthem                     1       2     0       0      0       0   Enchantment               0           0
+Gnarled Sage                        3       0     0       2      0       0   Creature                  4           4
+Goblin Arsonist                     0       0     1       0      0       0   Creature                  1           1
+Goblin Wizardry                     3       0     1       0      0       0   Instant                   0           0
+Goremand                            4       0     0       0      0       2   Creature                  5           5
+Grasp of Darkness                   0       0     0       0      0       2   Instant                   0           0
+Griffin Aerie                       1       1     0       0      0       0   Enchantment               0           0
+Grim Tutor                          1       0     0       0      0       2   Sorcery                   0           0
+Havoc Jester                        4       0     1       0      0       0   Creature                  5           5
+Heartfire Immolator                 1       0     1       0      0       0   Creature                  2           2
+Hellkite Punisher                   5       0     2       0      0       0   Creature                  6           6
+Heroic Intervention                 1       0     0       1      0       0   Instant                   0           0
+Historian of Zhalfir                2       0     0       0      2       0   Creature                  3           3
+Hobblefiend                         1       0     1       0      0       0   Creature                  2           1
+Hooded Blightfang                   2       0     0       0      0       1   Creature                  1           4
+Hunter's Edge                       3       0     0       1      0       0   Sorcery                   0           0
+Idol of Endurance                   2       1     0       0      0       0   Artifact                  0           0
+Igneous Cur                         1       0     1       0      0       0   Creature                  1           2
+Indulging Patrician                 1       1     0       0      0       1   Creature                  1           4
+Infernal Scarring                   1       0     0       0      0       1   Enchantment               0           0
+Invigorating Surge                  2       0     0       1      0       0   Instant                   0           0
+Island                              0       0     0       0      0       0   Basic Land                0           0
+Jeskai Elder                        1       0     0       0      1       0   Creature                  1           2
+Jolrael Mwonvuli Recluse            1       0     0       1      0       0   Legendary Creature        1           2
+Jungle Hollow                       0       0     0       0      0       0   Land                      0           0
+Kaervek the Spiteful                2       0     0       0      0       2   Legendary Creature        3           2
+Keen Glidemaster                    1       0     0       0      1       0   Creature                  2           1
+Keral Keep Disciples                2       0     2       0      0       0   Creature                  4           3
+Kinetic Augur                       3       0     1       0      0       0   Creature                  0           4
+Kitesail Freebooter                 1       0     0       0      0       1   Creature                  1           2
+Leafkin Avenger                     2       0     1       1      0       0   Creature                  4           3
+Legion's Judgment                   2       1     0       0      0       0   Sorcery                   0           0
+Library Larcenist                   2       0     0       0      1       0   Creature                  1           2
+Life Goes On                        0       0     0       1      0       0   Instant                   0           0
+Light of Promise                    2       1     0       0      0       0   Enchantment               0           0
+Liliana Death Mage                  4       0     0       0      0       2   Legendary Planeswalker    0           4
+Liliana Waker of the Dead           2       0     0       0      0       2   Legendary Planeswalker    0           4
+Liliana's Devotee                   2       0     0       0      0       1   Creature                  2           3
+Liliana's Scorn                     3       0     0       0      0       2   Sorcery                   0           0
+Liliana's Scrounger                 2       0     0       0      0       1   Creature                  3           2
+Liliana's Standard Bearer           2       0     0       0      0       1   Creature                  3           1
+Liliana's Steward                   0       0     0       0      0       1   Creature                  1           2
+Llanowar Visionary                  2       0     0       1      0       0   Creature                  2           2
+Lofty Denial                        1       0     0       0      1       0   Instant                   0           0
+Lorescale Coatl                     1       0     0       1      1       0   Creature                  2           2
+Makeshift Battalion                 2       1     0       0      0       0   Creature                  3           2
+Malefic Scythe                      1       0     0       0      0       1   Artifact                  0           0
+Mangara the Diplomat                3       1     0       0      0       0   Legendary Creature        2           4
+Masked Blackguard                   1       0     0       0      0       1   Creature                  2           1
+Massacre Wurm                       3       0     0       0      0       3   Creature                  6           5
+Mazemind Tome                       2       0     0       0      0       0   Artifact                  0           0
+Meteorite                           5       0     0       0      0       0   Artifact                  0           0
+Mind Rot                            2       0     0       0      0       1   Sorcery                   0           0
+Miscast                             0       0     0       0      1       0   Instant                   0           0
+Mistral Singer                      2       0     0       0      1       0   Creature                  2           2
+Mountain                            0       0     0       0      0       0   Basic Land                0           0
+Mystic Skyfish                      2       0     0       0      1       0   Creature                  3           1
+Necromentia                         1       0     0       0      0       2   Sorcery                   0           0
+Niambi Esteemed Speaker             0       1     0       0      1       0   Legendary Creature        2           1
+Nine Lives                          1       2     0       0      0       0   Enchantment               0           0
+Obsessive Stitcher                  1       0     0       0      1       1   Creature                  0           3
+Onakke Ogre                         2       0     1       0      0       0   Creature                  4           2
+Opt                                 0       0     0       0      1       0   Instant                   0           0
+Ornery Dilophosaur                  3       0     0       1      0       0   Creature                  2           2
+Pack Leader                         1       1     0       0      0       0   Creature                  2           2
+Palladium Myr                       3       0     0       0      0       0   Artifact Creature         2           2
+Peer into the Abyss                 4       0     0       0      0       3   Sorcery                   0           0
+Pestilent Haze                      1       0     0       0      0       2   Sorcery                   0           0
+Pitchburn Devils                    4       0     1       0      0       0   Creature                  3           3
+Plains                              0       0     0       0      0       0   Basic Land                0           0
+Portcullis Vine                     0       0     0       1      0       0   Creature                  0           3
+Predatory Wurm                      3       0     0       1      0       0   Creature                  4           4
+Pridemalkin                         2       0     0       1      0       0   Creature                  2           1
+Primal Might                        x       0     0       0      0       0   Sorcery                   0           0
+Prismite                            2       0     0       0      0       0   Artifact Creature         2           1
+Pursued Whale                       5       0     0       0      2       0   Creature                  8           8
+Quirion Dryad                       1       0     0       1      0       0   Creature                  1           1
+Radha Heart of Keld                 1       0     1       1      0       0   Legendary Creature        3           3
+Radiant Fountain                    0       0     0       0      0       0   Land                      0           0
+Rain of Revelation                  3       0     0       0      1       0   Instant                   0           0
+Rambunctious Mutt                   3       2     0       0      0       0   Creature                  3           4
+Ranger's Guile                      0       0     0       1      0       0   Instant                   0           0
+Read the Tides                      5       0     0       0      1       0   Sorcery                   0           0
+Return to Nature                    1       0     0       1      0       0   Instant                   0           0
+Revitalize                          1       1     0       0      0       0   Instant                   0           0
+Rewind                              2       0     0       0      2       0   Instant                   0           0
+Riddleform                          1       0     0       0      1       0   Enchantment               0           0
+Rin and Seri Inseparable            1       1     1       1      0       0   Legendary Creature        4           4
+Rise Again                          4       0     0       0      0       1   Sorcery                   0           0
+Roaming Ghostlight                  3       0     0       0      2       0   Creature                  3           2
+Rookie Mistake                      0       0     0       0      1       0   Instant                   0           0
+Rousing Read                        2       0     0       0      1       0   Enchantment               0           0
+Rugged Highlands                    0       0     0       0      0       0   Land                      0           0
+Run Afoul                           0       0     0       1      0       0   Instant                   0           0
+Runed Halo                          0       2     0       0      0       0   Enchantment               0           0
+Sabertooth Mauler                   3       0     0       1      0       0   Creature                  3           3
+Sanctum of All                      0       1     1       1      1       1   Legendary Enchantment     0           0
+Sanctum of Calm Waters              3       0     0       0      1       0   Legendary Enchantment     0           0
+Sanctum of Fruitful Harvest         2       0     0       1      0       0   Legendary Enchantment     0           0
+Sanctum of Shattered Heights        2       0     1       0      0       0   Legendary Enchantment     0           0
+Sanctum of Stone Fangs              1       0     0       0      0       1   Legendary Enchantment     0           0
+Sanctum of Tranquil Light           0       1     0       0      0       0   Legendary Enchantment     0           0
+Sanguine Indulgence                 3       0     0       0      0       1   Sorcery                   0           0
+Scavenging Ooze                     1       0     0       1      0       0   Creature                  2           2
+Scorching Dragonfire                1       0     1       0      0       0   Instant                   0           0
+Scoured Barrens                     0       0     0       0      0       0   Land                      0           0
+Seasoned Hallowblade                1       1     0       0      0       0   Creature                  3           1
+Secure the Scene                    4       1     0       0      0       0   Sorcery                   0           0
+See the Truth                       1       0     0       0      1       0   Sorcery                   0           0
+Selfless Savior                     0       1     0       0      0       0   Creature                  1           1
+Setessan Training                   1       0     0       1      0       0   Enchantment               0           0
+Shacklegeist                        1       0     0       0      1       0   Creature                  2           2
+Shipwreck Dowser                    3       0     0       0      2       0   Creature                  3           3
+Shock                               0       0     1       0      0       0   Instant                   0           0
+Short Sword                         1       0     0       0      0       0   Artifact                  0           0
+Siege Striker                       2       1     0       0      0       0   Creature                  1           1
+Sigiled Contender                   3       1     0       0      0       0   Creature                  3           3
+Silent Dart                         1       0     0       0      0       0   Artifact                  0           0
+Silversmote Ghoul                   2       0     0       0      0       1   Creature                  3           1
+Skeleton Archer                     3       0     0       0      0       1   Creature                  3           3
+Skyscanner                          3       0     0       0      0       0   Artifact Creature         1           1
+Skyway Sniper                       0       0     0       1      0       0   Creature                  1           2
+Snarespinner                        1       0     0       1      0       0   Creature                  1           3
+Solemn Simulacrum                   4       0     0       0      0       0   Artifact Creature         2           2
+Soul Sear                           2       0     1       0      0       0   Instant                   0           0
+Sparkhunter Masticore               3       0     0       0      0       0   Artifact Creature         3           4
+Speaker of the Heavens              0       1     0       0      0       0   Creature                  1           1
+Spellgorger Weird                   2       0     1       0      0       0   Creature                  2           2
+Spined Megalodon                    5       0     0       0      2       0   Creature                  5           7
+Spirit of Malevolence               1       0     0       0      0       1   Creature                  2           1
+Sporeweb Weaver                     2       0     0       1      0       0   Creature                  1           4
+Staunch Shieldmate                  0       1     0       0      0       0   Creature                  1           3
+Storm Caller                        2       0     1       0      0       0   Creature                  3           2
+Stormwing Entity                    3       0     0       0      2       0   Creature                  3           3
+Subira Tulzidi Caravanner           2       0     1       0      0       0   Legendary Creature        2           3
+Sublime Epiphany                    4       0     0       0      2       0   Instant                   0           0
+Sure Strike                         1       0     1       0      0       0   Instant                   0           0
+Swamp                               0       0     0       0      0       0   Basic Land                0           0
+Swift Response                      1       1     0       0      0       0   Instant                   0           0
+Swiftwater Cliffs                   0       0     0       0      0       0   Land                      0           0
+Tavern Swindler                     1       0     0       0      0       1   Creature                  2           2
+Teferi Master of Time               2       0     0       0      2       0   Legendary Planeswalker    0           3
+Teferi Timeless Voyager             4       0     0       0      2       0   Legendary Planeswalker    0           4
+Teferi's Ageless Insight            2       0     0       0      2       0   Legendary Enchantment     0           0
+Teferi's Protege                    2       0     0       0      1       0   Creature                  2           3
+Teferi's Tutelage                   2       0     0       0      1       0   Enchantment               0           0
+Teferi's Wavecaster                 3       0     0       0      2       0   Creature                  3           3
+Tempered Veteran                    1       1     0       0      0       0   Creature                  1           2
+Temple of Epiphany                  0       0     0       0      0       0   Land                      0           0
+Temple of Malady                    0       0     0       0      0       0   Land                      0           0
+Temple of Mystery                   0       0     0       0      0       0   Land                      0           0
+Temple of Silence                   0       0     0       0      0       0   Land                      0           0
+Temple of Triumph                   0       0     0       0      0       0   Land                      0           0
+Terror of the Peaks                 3       0     2       0      0       0   Creature                  5           4
+Thieves' Guild Enforcer             0       0     0       0      0       1   Creature                  1           1
+Thornwood Falls                     0       0     0       0      0       0   Land                      0           0
+Thrashing Brontodon                 1       0     0       2      0       0   Creature                  3           4
+Thrill of Possibility               1       0     1       0      0       0   Instant                   0           0
+Tide Skimmer                        3       0     0       0      1       0   Creature                  2           3
+Titanic Growth                      1       0     0       1      0       0   Instant                   0           0
+Tolarian Kraken                     4       0     0       0      2       0   Creature                  4           6
+Tome Anima                          3       0     0       0      1       0   Creature                  3           3
+Tormod's Crypt                      0       0     0       0      0       0   Artifact                  0           0
+Track Down                          1       0     0       1      0       0   Sorcery                   0           0
+Traitorous Greed                    3       0     1       0      0       0   Sorcery                   0           0
+Tranquil Cove                       0       0     0       0      0       0   Land                      0           0
+Transmogrify                        3       0     1       0      0       0   Sorcery                   0           0
+Trufflesnout                        2       0     0       1      0       0   Creature                  2           2
+Turn to Slag                        3       0     2       0      0       0   Sorcery                   0           0
+Turret Ogre                         3       0     1       0      0       0   Creature                  4           3
+Twinblade Assassins                 3       0     0       1      0       1   Creature                  5           4
+Ugin the Spirit Dragon              8       0     0       0      0       0   Legendary Planeswalker    0           7
+Unleash Fury                        1       0     1       0      0       0   Instant                   0           0
+Unsubstantiate                      1       0     0       0      1       0   Instant                   0           0
+Valorous Steed                      4       1     0       0      0       0   Creature                  3           3
+Village Rites                       0       0     0       0      0       1   Instant                   0           0
+Vito Thorn of the Dusk Rose         2       0     0       0      0       1   Legendary Creature        1           3
+Vodalian Arcanist                   1       0     0       0      1       0   Creature                  1           3
+Volcanic Geyser                     x       0     0       0      0       0   Instant                   0           0
+Volcanic Salvo                     10       0     2       0      0       0   Sorcery                   0           0
+Vryn Wingmare                       2       1     0       0      0       0   Creature                  2           1
+Waker of Waves                      5       0     0       0      2       0   Creature                  7           7
+Walking Corpse                      1       0     0       0      0       1   Creature                  2           2
+Wall of Runes                       0       0     0       0      1       0   Creature                  0           4
+Warded Battlements                  2       1     0       0      0       0   Creature                  0           3
+Warden of the Woods                 4       0     0       2      0       0   Creature                  5           7
+Watcher of the Spheres              0       1     0       0      1       0   Creature                  2           2
+Wildwood Patrol                     2       0     0       1      0       0   Creature                  4           2
+Wildwood Scourge                    x       0     0       0      0       0   Creature                  0           0
+Wind-Scarred Crag                   0       0     0       0      0       0   Land                      0           0
+Wishcoin Crab                       3       0     0       0      1       0   Creature                  2           5
+Witch's Cauldron                    0       0     0       0      0       1   Artifact                  0           0
+--------------------------------------------------------------------------------------------------------------------
