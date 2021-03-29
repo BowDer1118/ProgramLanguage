@@ -1,69 +1,53 @@
-#include <stdbool.h>
 #include <stdio.h>
-#define SIZE 300
+#include <stdbool.h>
 
-void get_binary(unsigned int *num, unsigned int *binary) {
-    unsigned int temp = 1 << 31;
-    int index = 0;
-
-    for (int i = 0; i < 4; i++) {
-        unsigned int n = (*(num + i)) << 24;
-        for (int j = 0; j < 8; j++) {
-            if (n & temp) {
-                binary[index] = 1;
-            } else {
-                binary[index] = 0;
-            }
-            n <<= 1;
-            index++;
-        }
-    }
-}
-
-int main() {
-    bool flag = false;
-
-    while (1) {
+int main(){
+    bool flag=false;
+    while(1){
         int num;
-        scanf("%d", &num);
-        if (num == 0) {
+        scanf("%d",&num);
+
+        if(num==0){
             break;
         }
 
-        unsigned int domain[4] = {0};
-        unsigned int bin_domain[32] = {0};
-        unsigned int sub_net[4] = {0};
-        unsigned int bin_sub_net[32] = {0};
-        unsigned int compare_len;
-        scanf("%u.%u.%u.%u/%u", &domain[0], &domain[1], &domain[2], &domain[3], &compare_len);
-        get_binary(domain, bin_domain);
+        unsigned int ta,tb,tc,td,len;
+        scanf("%u.%u.%u.%u/%u",&ta,&tb,&tc,&td,&len);
 
-        if (flag) {
+        if(flag){
             puts("");
         }
 
         puts("--------------------------------------------------------------------------------");
-        printf("The following addresses are within the subnetwork %u.%u.%u.%u/%d:\n", domain[0], domain[1], domain[2], domain[3], compare_len);
+        printf("The following addresses are within the subnetwork %u.%u.%u.%u/%u:\n",ta,tb,tc,td,len);
 
-        for (int i = 0; i < num; i++) {
-            scanf("%u.%u.%u.%u", &sub_net[0], &sub_net[1], &sub_net[2], &sub_net[3]);
-            get_binary(sub_net, bin_sub_net);
+        unsigned int domain=0;
+        domain+=(ta<<24);
+        domain+=(tb<<16);
+        domain+=(tc<<8);
+        domain+=(td);
+        
+        domain>>=(32-len);
 
-            bool same = true;
-            for (int j = 0; j < compare_len; j++) {
-                if (bin_domain[j] != bin_sub_net[j]) {
-                    same = false;
-                    break;
-                }
-            }
+        for(int i=0;i<num;i++){
+            scanf("%u.%u.%u.%u",&ta,&tb,&tc,&td);
+            unsigned int sub=0;
+            sub+=(ta<<24);
+            sub+=(tb<<16);
+            sub+=(tc<<8);
+            sub+=td;
 
-            if (same) {
-                printf("%d.%d.%d.%d\n", sub_net[0], sub_net[1], sub_net[2], sub_net[3]);
+            sub>>=32-len;
+
+            if(sub==domain){
+                printf("%u.%u.%u.%u\n",ta,tb,tc,td);
             }
         }
 
         puts("--------------------------------------------------------------------------------");
-        flag = true;
+        flag=true;
     }
+
+
     return 0;
 }
