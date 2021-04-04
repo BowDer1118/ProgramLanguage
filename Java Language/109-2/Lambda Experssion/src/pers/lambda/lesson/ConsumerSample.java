@@ -6,6 +6,7 @@ public class ConsumerSample {
     //控制輸出
     public static void output(Consumer<String> consumer){
         String text="我是測試的文字";
+        //參數為要輸出的字串
         consumer.accept(text);
     }
     public static void main(String[] args) {

@@ -8,6 +8,7 @@ public class PredicateSample {
     //將Predicate接口當作參數
     public static void filter(List<Integer>list,Predicate<Integer> predicate){
         for(Integer num:list){
+            //test函數的參數是Integer類型
             if(predicate.test(num)){
                 System.out.print(num+" ");
             }
