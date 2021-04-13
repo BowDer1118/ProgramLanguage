@@ -68,6 +68,7 @@ int main() {
     FILE *file = fopen("test_input_MTG21RAFO.txt", "r");
     Card cards[300];
     int counter = 0;
+    Card c;
     char input_string[300];
 
     if (!file) {
@@ -78,8 +79,8 @@ int main() {
     memset(cards, 0, sizeof(cards));
 
     while (fgets(input_string, 300, file)) {
+        memset(&c,0,sizeof(Card));
         char *sub_string[5];
-        Card c;
 
         sub_string[0] = strtok(input_string, ",");
         for (int i = 1; i < 5; i++) {
@@ -89,7 +90,15 @@ int main() {
         strcpy(c.name, sub_string[0]);
         c.cost = process_mana(sub_string[1]);
 
-        strcpy(c.type, strtok(sub_string[2], "-"));
+        strcpy(c.type, sub_string[2]);
+
+        if(strstr(c.type,"-")){
+            char *temp=c.type;
+            while(*temp!='-'){
+                temp++;
+            }
+            memset(temp,0,sizeof(char));
+        }
 
         c.power = atoi(sub_string[3]);
         c.toughless = atoi(sub_string[4]);
