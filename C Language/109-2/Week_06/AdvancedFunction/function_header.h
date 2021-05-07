@@ -1,0 +1,3 @@
+void input(unsigned int &n, unsigned int &t, unsigned int &velocity_x, unsigned int &acceleration_x, unsigned int &velocity_y, unsigned int &acceleration_y, unsigned int &velocity_z, unsigned int &acceleration_z);
+void output(unsigned int &n, unsigned int &t, unsigned int &velocity_x, unsigned int &acceleration_x, unsigned int &velocity_y, unsigned int &acceleration_y, unsigned int &velocity_z, unsigned int &acceleration_z);
+inline void display_result(unsigned int t = 5, unsigned int velocity_x = 1, unsigned int acceleration_x = 2, unsigned int velocity_y = 2, unsigned int acceleration_y = 5, unsigned int velocity_z = 3, unsigned int acceleration_z = 10);
