@@ -1,0 +1,5 @@
+A
+AB
+abc
+abcd
+ABCDef
