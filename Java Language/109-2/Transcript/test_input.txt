@@ -1,0 +1,18 @@
+##Person Name Source from 英文姓名隨機生成產生器: https://zfly9.blogspot.com/2015/02/getenglishname.html
+##Grade Score Source from RANDOM NUMBER GENERATOR: https://lab.25sprout.com/nrprnd/
+##StudentID FirstName LastName City Birthday Gender Math English Chinese
+408261231 Nicholas Jefferson 0 20001231 0 17 79 45
+408261172 Lena Sterling 1 19970210 1 14 11 68
+408261203 Alvin Campbell 2 19981201 0 74 17 31
+408261974 Janna Blaine 3 19990101 1 58 43 91
+408261115 Caleb Rahman 0 20010202 0 65 5 47
+408261486 Sarah Duncan 1 20000322 1 80 89 0
+408261477 Hayden Gunter 2 19990903 0 99 14 71
+408261588 Vivian Adames 3 19980707 1 84 54 51
+408261109 Isabelle Caulfield 1 19990809 1 37 70 13
+408261110 Maracay Mallette 0 20001011 0 62 65 74
+408261771 Zachary Bieber 1 19991111 0 86 68 62
+408261912 Benjamin Mulligan 2 20000321 0 99 71 60
+408261183 Paige Charles 3 19990404 1 65 72 63
+408261054 Elaine Harper 0 19991026 1 96 61 49
+408261665 Dwight Vives 1 20000828 0 78 84 96
