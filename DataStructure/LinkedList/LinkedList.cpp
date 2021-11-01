@@ -4,23 +4,23 @@ using namespace std;
 
 template <typename Item>
 class LinkedList {
-    friend ostream &operator<<(ostream &os, LinkedList &list) {
-        bool format = false;
+    //Overload cout
+    friend ostream &operator<<(ostream &os, LinkedList<Item> list) {
         while (list.head) {
-            if (format) {
-                os << " ";
-            }
-            os << list.head->data;
+            os << list.head;
             list.head = list.head->next;
-            format = true;
         }
-        os << "\n";
         return os;
     }
 
 private:
     //私有struct(不給外部調用)
     struct Node {
+        //Overload cout
+        friend ostream &operator<<(ostream &os, Node *node) {  //注意傳入的是node指標
+            os << node->data << "\n";
+            return os;
+        }
         Item data;
         Node *next;
         Node(Item data, Node *next) : data(data), next(next) {}
@@ -35,8 +35,9 @@ public:
         while (head) {          //還有節點
             Node *temp = head;  //暫存要被刪掉的節點位置
             head = head->next;  //移動到下一個節點
-            delete temp;        //釋放上一個節點
-            count--;            //更新節點數量
+            cout << "Free node " << temp;
+            delete temp;  //釋放上一個節點
+            count--;      //更新節點數量
         }
     }
     int size() {
@@ -83,6 +84,7 @@ public:
         return false;
     }
 
+    //移除特定資料(如果有)
     void remove(Item item) {
         if (!head) {  //LinkedList為空
             return;
@@ -116,8 +118,43 @@ public:
             current = current->next;  //往下一個節點走
         }
     }
+    //翻轉LinkedList
+    void invert() {
+        Node *p, *c, *n;  //previous current next position
+        c = NULL;
+        n = head;
+
+        while (n) {
+            p = c;
+            c = n;
+            n = n->next;
+            c->next = p;
+        }
+        head = c;
+    }
 };
 
+//basic data type
+void sample1() {
+    LinkedList<int> list;
+    int arr[] = {3, 1, 5, 4, 2};
+    //將arr的元素加入list中
+    for (int i = 0; i < 5; i++) {
+        list.insert(arr[i]);
+    }
+    cout << "List size:" << list.size() << "\n";
+    cout << "List elements:\n";
+    cout << list;  //3 1 5 4 2
+    cout << "After invert:\n";
+    list.invert();
+    cout << list;  // 2 4 5 1 3
+}
+
 int main() {
+    //加速cin cout
+    ios::sync_with_stdio(false);  //取消與stdio同步
+    cin.tie(NULL);                //取消cin cout綁定(避免觸發flush)
+
+    sample1();
     return 0;
 }
