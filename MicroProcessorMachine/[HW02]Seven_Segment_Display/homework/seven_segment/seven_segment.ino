@@ -75,21 +75,22 @@ bool keyScan( ) {
   //讀取第1個Row:讀取D11腳位
   if (digitalRead(D11) == LOW) {
     digitalWrite(A0, HIGH);
-    Row = 0; Col = 1;
+    Row = 1; Col = 0;
     return true;
   }
   //讀取第2個Row:讀取D12腳位
   if (digitalRead(12) == LOW) {
     digitalWrite(A0, HIGH);
-    Row = 0; Col = 2;
+    Row = 2; Col = 0;
     return true;
   }
   //讀取第3個Row:讀取D13腳位
   if (digitalRead(13) == LOW) {
     digitalWrite(A0, HIGH);
-    Row = 0; Col = 3;
+    Row = 3; Col = 0;
     return true;
   }
+  
   /* scan 第0個Col */
   digitalWrite(A0, HIGH);
   digitalWrite(A1, LOW);
@@ -99,7 +100,7 @@ bool keyScan( ) {
 
   if (digitalRead(10) == LOW) {
     digitalWrite(A1, HIGH);
-    Row = 1; Col = 0;
+    Row = 0; Col = 1;
     return true;
   }
 
@@ -111,13 +112,13 @@ bool keyScan( ) {
 
   if (digitalRead(12) == LOW) {
     digitalWrite(A1, HIGH);
-    Row = 1; Col = 2;
+    Row = 2; Col = 1;
     return true;
   }
-  //Read keys in row.4
+
   if (digitalRead(13) == LOW) {
     digitalWrite(A1, HIGH);
-    Row = 1; Col = 3;
+    Row = 3; Col = 1;
     return true;
   }
 
@@ -131,13 +132,13 @@ bool keyScan( ) {
 
   if (digitalRead(10) == LOW) {
     digitalWrite(A2, HIGH);
-    Row = 2; Col = 0;
+    Row = 0; Col = 2;
     return true;
   }
-  //Read keys in row.2
+
   if (digitalRead(11) == LOW) {
     digitalWrite(A2, HIGH);
-    Row = 2; Col = 1;
+    Row = 1; Col = 2;
     return true;
   }
 
@@ -149,7 +150,7 @@ bool keyScan( ) {
 
   if (digitalRead(13) == LOW) {
     digitalWrite(A2, HIGH);
-    Row = 2; Col = 3;
+    Row = 3; Col = 2;
     return true;
   }
 
@@ -161,19 +162,19 @@ bool keyScan( ) {
 
   if (digitalRead(10) == LOW) {
     digitalWrite(A3, HIGH);
-    Row = 3; Col = 0;
+    Row = 0; Col = 3;
     return true;
   }
 
   if (digitalRead(11) == LOW) {
     digitalWrite(A3, HIGH);
-    Row = 3; Col = 1;
+    Row = 1; Col = 3;
     return true;
   }
 
   if (digitalRead(12) == LOW) {
     digitalWrite(A3, HIGH);
-    Row = 3; Col = 2;
+    Row = 2; Col = 3;
     return true;
   }
 
