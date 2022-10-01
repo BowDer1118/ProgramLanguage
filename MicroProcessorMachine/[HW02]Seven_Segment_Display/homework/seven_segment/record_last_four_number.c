@@ -13,16 +13,17 @@ void init() {
 }
 
 void addValue(int input) {
-    printf("Add:%d\n", input);
+    printf("Add data %d\n", count);
+    printf("Value= %d\n", input);
     values[(count - 1) % NUMBER] = input;
 }
 
 void display() {
-    printf("Current array\n");
-    for (int i = 0; i < NUMBER; i++) {
-        printf("%d ", values[i]);
-    }
-    printf("\n");
+    // printf("Current array\n");
+    // for (int i = 0; i < NUMBER; i++) {
+    //     printf("%d ", values[i]);
+    // }
+    // printf("\n");
 
     printf("Output\n");
     if (count < NUMBER) {
