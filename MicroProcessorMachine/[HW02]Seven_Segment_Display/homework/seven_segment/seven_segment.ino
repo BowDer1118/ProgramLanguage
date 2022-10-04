@@ -38,7 +38,7 @@ unsigned long count;
 const byte RECORD_SIZE = 4;  //紀錄最後4個數字
 byte segment_map_index[RECORD_SIZE];
 
- 
+
 /* Write a decimal numberto one of the 4 digits of the display */
 void WriteNumberToSegment(byte segment, byte value) {  //使用正向觸發的方式傳輸資料(LATCH_DIO->先給LOW->傳輸資料->再給HIGH){
   digitalWrite(LATCH_DIO, LOW);
@@ -230,19 +230,19 @@ void setup() {
   }
 }
 
-void FlyNumbersLeftToRight(){
+void FlyNumbersLeftToRight() {
   //要飛入的數字
   for (int i = 0; i < RECORD_SIZE; i++) {
     //左到右飛入
     for (int j = 0; j < RECORD_SIZE; j++) {
       delay(DELAY_TIME);
       if (j != 0) {                                                   //不是在最左邊的位置(要清掉左邊的圖形)
-        WriteNumberToSegment(j-1,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
+        WriteNumberToSegment(j - 1, SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
       }
       WriteNumberToSegment(j, SEGMENT_MAP[segment_map_index[i]]);
     }
     //飛出最後的數字
-    WriteNumberToSegment(3,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
+    WriteNumberToSegment(3, SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
     //輸出最後4紀錄的數字
     for (int i = 0; i < RECORD_SIZE; i++) {
       WriteNumberToSegment(i, SEGMENT_MAP[segment_map_index[i]]);
@@ -250,19 +250,19 @@ void FlyNumbersLeftToRight(){
   }
 }
 
-void FlyNumbersRightToLeft(){
+void FlyNumbersRightToLeft() {
   //要飛入的數字
   for (int i = 0; i < RECORD_SIZE; i++) {
     //右到左飛入
     for (int j = (RECORD_SIZE - 1); j <= 0; j--) {
       delay(DELAY_TIME);
       if (j != (RECORD_SIZE - 1)) {                                   //不是在最右邊的位置(要清掉右邊的圖形)
-        WriteNumberToSegment(j+1,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
+        WriteNumberToSegment(j + 1, SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
       }
       WriteNumberToSegment(j, SEGMENT_MAP[segment_map_index[i]]);
     }
     //飛出最後的數字
-    WriteNumberToSegment(0,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
+    WriteNumberToSegment(0, SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
     //輸出最後4紀錄的數字
     for (int i = 0; i < RECORD_SIZE; i++) {
       WriteNumberToSegment(i, SEGMENT_MAP[segment_map_index[i]]);
@@ -280,13 +280,13 @@ void loop() {
       count++;
       segment_map_index[(count - 1) % RECORD_SIZE] = seg_index;  //透過循環紀錄最後的數字
       //輸出結果
-      for(int i=0;i<RECORD_SIZE;i++){
-        WriteNumberToSegment(i,segment_map_index[i]);
+      for (int i = 0; i < RECORD_SIZE; i++) {
+        WriteNumberToSegment(i, segment_map_index[i]);
       }
-      }
-    } else if (seg_index == 14) {  //按鈕為功能:左到右飛入
-      FlyNumbersLeftToRight();
-    } else if (seg_index == 15) {  //按鈕為功能:右到左飛入
-      FlyNumbersRightToLeft();
     }
+  } else if (seg_index == 14) {  //按鈕為功能:左到右飛入
+    FlyNumbersLeftToRight();
+  } else if (seg_index == 15) {  //按鈕為功能:右到左飛入
+    FlyNumbersRightToLeft();
   }
+}
