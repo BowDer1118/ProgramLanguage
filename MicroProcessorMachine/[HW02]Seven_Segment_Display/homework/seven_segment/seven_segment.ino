@@ -59,7 +59,7 @@ void FlyNumbersFromRightToLeft() {
   //最初個數字到最末個數字
   for (int i = (RECORD_SIZE - 1); i >= 0; i--) {
     //從右往左飛出
-    for (int pos = 0; pos < RECORD_SIZE; pos++) {
+    for (int pos = (RECORD_SIZE-1); pos >= 0; pos--) {
       delay(DELAY_TIME);
       WriteNumberToSegment(pos, SELECT_INDEX[i]);
     }
@@ -255,6 +255,10 @@ void loop() {
   //偵測按鍵輸入
   if (keyScan() == true) {           //在讀取按鈕時 當按鈕被按下 會讀到的數值會是0 (原因:看電路圖 當按鈕按下時電路將導通接地 電位會輸出0)
     delay(DELAY_TIME);
+    //清除顯示器
+    for (int i = 0; i < RECORD_SIZE; i++) {
+      WriteNumberToSegment(i, 3);
+    }
     Pad_Index = Row * 4 + Col;  //取得key_pad位置索引值(透過IS_USEED來判斷是 數字 還是功能 按鈕被按下)
     if (SEGMENT_MAP[Pad_Index]) { //按鈕為數字
       for (int i = 0; i < (RECORD_SIZE - 1); i++) {
