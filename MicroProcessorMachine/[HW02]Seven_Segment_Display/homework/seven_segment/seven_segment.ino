@@ -31,12 +31,14 @@ const byte SEGMENT_SELECT[] = { 0x0E, 0x0D, 0x0B, 0x07 };  // {0xFE,0xFD,0xFB,0x
 
 /* 按鈕輸入檢查與位置紀錄 */
 byte Row = 0, Col = 0;  //表示當前輸入的key_pads座標
+byte seg_index; //紀錄位置
 
 /* 透過取%實現循環紀錄最後4個數字(詳細可以查看record_last_four_number.c) */
 unsigned long count;
 const byte RECORD_SIZE = 4;  //紀錄最後4個數字
 byte segment_map_index[RECORD_SIZE];
 
+ 
 /* Write a decimal numberto one of the 4 digits of the display */
 void WriteNumberToSegment(byte segment, byte value) {  //使用正向觸發的方式傳輸資料(LATCH_DIO->先給LOW->傳輸資料->再給HIGH){
   digitalWrite(LATCH_DIO, LOW);
@@ -196,7 +198,6 @@ bool keyScan() {
   return false;
 }
 
-
 void setup() {
   /* Seven Segmet:Set DIO pins to outputs */
   pinMode(LATCH_DIO, OUTPUT);
@@ -229,7 +230,6 @@ void setup() {
   }
 }
 
-
 void FlyNumbersLeftToRight(){
   //要飛入的數字
   for (int i = 0; i < RECORD_SIZE; i++) {
@@ -237,12 +237,12 @@ void FlyNumbersLeftToRight(){
     for (int j = 0; j < RECORD_SIZE; j++) {
       delay(DELAY_TIME);
       if (j != 0) {                                                   //不是在最左邊的位置(要清掉左邊的圖形)
-        WriteNumberToSegment(j-1,SEGMENT_MAP[segment_map_index[3]]]); //segment_map_index[3]為0x00 為清除的圖形
+        WriteNumberToSegment(j-1,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
       }
       WriteNumberToSegment(j, SEGMENT_MAP[segment_map_index[i]]);
     }
     //飛出最後的數字
-    WriteNumberToSegment(3,SEGMENT_MAP[segment_map_index[3]]]); //segment_map_index[3]為0x00 為清除的圖形
+    WriteNumberToSegment(3,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
     //輸出最後4紀錄的數字
     for (int i = 0; i < RECORD_SIZE; i++) {
       WriteNumberToSegment(i, SEGMENT_MAP[segment_map_index[i]]);
@@ -250,19 +250,19 @@ void FlyNumbersLeftToRight(){
   }
 }
 
-void FlyRightToRight(){
+void FlyNumbersRightToLeft(){
   //要飛入的數字
   for (int i = 0; i < RECORD_SIZE; i++) {
     //右到左飛入
     for (int j = (RECORD_SIZE - 1); j <= 0; j--) {
       delay(DELAY_TIME);
       if (j != (RECORD_SIZE - 1)) {                                   //不是在最右邊的位置(要清掉右邊的圖形)
-        WriteNumberToSegment(j+1,SEGMENT_MAP[segment_map_index[3]]]); //segment_map_index[3]為0x00 為清除的圖形
+        WriteNumberToSegment(j+1,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
       }
       WriteNumberToSegment(j, SEGMENT_MAP[segment_map_index[i]]);
     }
     //飛出最後的數字
-    WriteNumberToSegment(0,SEGMENT_MAP[segment_map_index[3]]]); //segment_map_index[3]為0x00 為清除的圖形
+    WriteNumberToSegment(0,SEGMENT_MAP[segment_map_index[3]]); //segment_map_index[3]為0x00 為清除的圖形
     //輸出最後4紀錄的數字
     for (int i = 0; i < RECORD_SIZE; i++) {
       WriteNumberToSegment(i, SEGMENT_MAP[segment_map_index[i]]);
@@ -274,13 +274,16 @@ void FlyRightToRight(){
 void loop() {
   //偵測按鍵輸入
   if (keyScan() == true) {           //在讀取按鈕時 當按鈕被按下 會讀到的數值會是0 (原因:看電路圖 當按鈕按下時電路將導通接地 電位會輸出0)
-    byte seg_index = Row * 4 + Col;  //取得key_pad位置索引值(透過IS_USEED來判斷是 數字 還是功能 按鈕被按下)
+    seg_index = Row * 4 + Col;  //取得key_pad位置索引值(透過IS_USEED來判斷是 數字 還是功能 按鈕被按下)
     if (IS_USEED[seg_index]) {       //按鈕為數字
       //記住當前數字
       count++;
-      segment_map_index[(count - 1) % NUMBER] = seg_index;  //透過循環紀錄最後的數字
+      segment_map_index[(count - 1) % RECORD_SIZE] = seg_index;  //透過循環紀錄最後的數字
       //輸出結果
-      WriteLastFourNumberToSegment();
+      for(int i=0;i<RECORD_SIZE;i++){
+        WriteNumberToSegment(i,segment_map_index[i]);
+      }
+      }
     } else if (seg_index == 14) {  //按鈕為功能:左到右飛入
       FlyNumbersLeftToRight();
     } else if (seg_index == 15) {  //按鈕為功能:右到左飛入
