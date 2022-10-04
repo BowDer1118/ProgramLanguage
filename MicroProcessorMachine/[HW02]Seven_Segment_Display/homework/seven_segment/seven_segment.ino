@@ -1,7 +1,7 @@
 /*Created by ACET-Tec and Modified by 黃寶德*/
 
 /* Define shift register pins used for seven segment display */
-#define LATCH_DIO D15  //電路圖:控制暫存器要在何時工作的CLOCK LCHCLK的腳位是D15 (racing edge triggered or falling edge triggered)
+#define LATCH_DIO D15  //電路圖:控制暫存器要在何時工作的CLOCK LATCLK的腳位是D15 (racing edge triggered or falling edge triggered)
 #define CLK_DIO D14    //電路圖:控制資料輸入的CLOCK SFTCLK的腳位
 #define DATA_DIO D2    //電路圖:資料輸入的腳位D2
 #define DELAY_TIME 250 //定義延遲時間
