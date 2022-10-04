@@ -27,12 +27,13 @@ byte Row = 0, Col = 0;  //表示當前輸入的key_pads座標
 byte Pad_Index; //紀錄位置
 
 /* 紀錄最後4個數字 */
-const byte RECORD_SIZE = 4;  //紀錄最後4個數字
+const byte RECORD_SIZE = 4;
 byte SELECT_INDEX[RECORD_SIZE];
 
 
 /* Write a decimal numberto one of the 4 digits of the display */
-void WriteNumberToSegment(byte segment, byte value) {  //使用正向觸發的方式傳輸資料(LATCH_DIO->先給LOW->傳輸資料->再給HIGH){
+void WriteNumberToSegment(byte segment, byte value) {  
+  //使用正向觸發的方式傳輸資料(LATCH_DIO->先給LOW->傳輸資料->再給HIGH){
   digitalWrite(LATCH_DIO, LOW);
   // The following order cannot be changed. MAP first and then SELECT. (因電路設計先傳輸要輸出的數字資料再傳輸要顯示的位置資料)
   // shiftOut(資料傳輸腳位,資料傳輸的clock腳位,資料傳輸方式,要傳輸的資料)
@@ -239,12 +240,12 @@ void setup() {
 
   //清除顯示器
   for (int i = 0; i < RECORD_SIZE; i++) {
-    WriteNumberToSegment(i, 3);
+    WriteNumberToSegment(i, 3); //SEGMENT_MAP[3]為0x00 代表清空圖形
   }
 
   //初始化紀錄
   for (int i = 0; i < RECORD_SIZE; i++) {  //將記錄的數值都清除
-    SELECT_INDEX[i] = 3;              //SEGMENT_MAP[3]為0x00 代表清空圖形
+    SELECT_INDEX[i] = 3;              
   }
 }
 
@@ -252,14 +253,14 @@ void setup() {
 
 /* Main program */
 void loop() {
-  //偵測按鍵輸入
-  if (keyScan() == true) {           //在讀取按鈕時 當按鈕被按下 會讀到的數值會是0 (原因:看電路圖 當按鈕按下時電路將導通接地 電位會輸出0)
+  /* 偵測按鍵輸入:在讀取按鈕時 當按鈕被按下 會讀到的數值會是0 (原因:看電路圖 當按鈕按下時電路將導通接地 電位會輸出0) */
+  if (keyScan() == true) {           
     delay(DELAY_TIME);
     //清除顯示器
     for (int i = 0; i < RECORD_SIZE; i++) {
       WriteNumberToSegment(i, 3);
     }
-    Pad_Index = Row * 4 + Col;  //取得key_pad位置索引值(透過IS_USEED來判斷是 數字 還是功能 按鈕被按下)
+    Pad_Index = Row * 4 + Col;  //取得key_pad位置索引值
     if (SEGMENT_MAP[Pad_Index]) { //按鈕為數字
       for (int i = 0; i < (RECORD_SIZE - 1); i++) {
         SELECT_INDEX[i] = SELECT_INDEX[i + 1];
@@ -271,6 +272,7 @@ void loop() {
       FlyNumbersFromRightToLeft();
     }
   }
+  //輸出最後4個數字
   for (int i = (RECORD_SIZE - 1); i >= 0; i--) {
     WriteNumberToSegment(i, SELECT_INDEX[i]);
   }
