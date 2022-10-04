@@ -57,9 +57,9 @@ void FlyNumbersFromLeftToRight() {
 
 void FlyNumbersFromRightToLeft() {
   //最初個數字到最末個數字
-  for (int i = (RECORD_SIZE - 1); i >= 0; i--) {
+  for (int i = 0; i < RECORD_SIZE; i++) {
     //從右往左飛出
-    for (int pos = (RECORD_SIZE-1); pos >= 0; pos--) {
+    for (int pos = (RECORD_SIZE - 1); pos >= 0; pos--) {
       delay(DELAY_TIME);
       WriteNumberToSegment(pos, SELECT_INDEX[i]);
     }
