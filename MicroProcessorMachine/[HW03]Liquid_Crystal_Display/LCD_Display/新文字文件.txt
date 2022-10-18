@@ -1,2 +1,0 @@
-This is the first string with 40 bytes!!
-And the second string also has 40 bytes!
