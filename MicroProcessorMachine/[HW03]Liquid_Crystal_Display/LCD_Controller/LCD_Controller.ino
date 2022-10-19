@@ -189,22 +189,20 @@ void displayOnLine2() {
 
 /*控制文字左移*/
 void doLeftShift() {
-  lcd.autoscroll();
+  //往左繞一整圈
   for (int i = 0; i < 40; i++) {
-    lcd.scrollDisplayLeft();
+    lcd.scrollDisplayLeft(); //Display向左位移一格
     delay(DELAY_TIME);
   }
-  lcd.noAutoscroll();
 }
 
 /*控制文字右移*/
 void doRightShift() {
-  lcd.autoscroll();
+  //往右繞一整圈
   for (int i = 0; i < 40; i++) {
-    lcd.scrollDisplayRight();
+    lcd.scrollDisplayRight(); //Display向右位移一格
     delay(DELAY_TIME);
   }
-  lcd.noAutoscroll();
 }
 
 /*控制Clear Display*/
@@ -219,6 +217,7 @@ void ReturnHome() {
 
 /*控制Cursor on/off*/
 void ChangeCursorDisplayMode() {
+  //如果沒顯示-->顯示 如果顯示-->關掉
   if (!CurSorIsOn) {
     lcd.cursor();
     CurSorIsOn = true;
@@ -258,6 +257,7 @@ void loop() {
   buttonState3 = digitalRead(BT3);
   buttonState4 = digitalRead(BT4);
 
+  /*檢查BT1 BT2 BT4 是否被按下*/
   if (buttonState1 == LOW) {
    ClearDisplay();
    delay(DELAY_TIME);
@@ -269,16 +269,17 @@ void loop() {
     delay(DELAY_TIME);
   }
   
+  /*檢查Pad是否被按下*/
   if (keyScan()) {
     Pad_Index = Row * 4 + Col;
-    if (IS_USE[Pad_Index]) { //檢查按下的按鈕有沒有功能
+    if (IS_USE[Pad_Index]) { 
       if (Pad_Index == 0) { //按下按鈕1
         displayOnLine1();
-      } else if (Pad_Index == 3) {
+      } else if (Pad_Index == 3) { //按下按鈕A
         displayOnLine2();
-      } else if (Pad_Index == 4) {
+      } else if (Pad_Index == 4) { //按下按鈕4
         doLeftShift();
-      } else if (Pad_Index == 15) {
+      } else if (Pad_Index == 15) { //按下按鈕D
         doRightShift();
       }
     }
