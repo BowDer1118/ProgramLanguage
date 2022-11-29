@@ -18,7 +18,7 @@ char timeBuffer[17];
 
 /*紀錄碼表狀態*/
 bool isEnable;
-string countingState;
+String countingState;
 int countingHour, countingMin, countingSecond;
 
 void setup() {
@@ -89,7 +89,7 @@ void loop() {
                 countingMin %= 60;
                 countingHour %= 24;
             }
-            sprintf(timeBuffer, "%2d:%2d:%2d %s", countingHour, countingMin, countingSecond, countingState);
+            sprintf(timeBuffer, "%2d:%2d:%2d %s", countingHour, countingMin, countingSecond, countingState.c_str());
         }
 
         delay(1000);
