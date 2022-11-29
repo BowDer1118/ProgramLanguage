@@ -90,9 +90,12 @@ void loop() {
       countingMin %= 60;
       countingHour %= 24;
     }
-    sprintf(timeBuffer, "%2d:%2d:%2d %s", countingHour, countingMin, countingSecond, countingState.c_str());
+    sprintf(timeBuffer, "%02d:%02d:%02d %7s", countingHour, countingMin, countingSecond, countingState.c_str());
     lcd.setCursor(0, 1);
     lcd.print(timeBuffer);
+  }else{
+    lcd.setCursor(0,1);
+    lcd.print("                ");
   }
 
   delay(1000);
