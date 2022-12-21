@@ -1,0 +1,3 @@
+I am an example file.
+Which has three line.
+I am the last line of this file.
