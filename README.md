@@ -6,6 +6,6 @@ This repository is used to record my program language study status in FJU CSIE.
 2. Assembly Language: Include x86 Assembly Language homework and quiz solutions which solved by myself.
 3. MicroProcessorMachine(Arduino): Include customized Arduino code to control Andes Corvette-F1 N25 board.
 4. Arduino and Arduino+Processing: Include basic Arduino practice code to control basic hardware,and use UART to communication with Process Language.
-5. Java: Include two part Java Language content.<br>
+5. Java L: Include two part Java Language content.<br>
    First part,109-1: Include basic Java build-in api and homework solutions which solved by myself.<br>
    Second part,109-2: Include advanced Java features like Stream,Design patterns...etc.
